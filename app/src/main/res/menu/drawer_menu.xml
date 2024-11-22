@@ -1,0 +1,9 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/note_group"
+        android:title="Notas">
+        <menu>
+            <!-- Las notas dinámicas se agregarán aquí -->
+        </menu>
+    </item>
+</menu>

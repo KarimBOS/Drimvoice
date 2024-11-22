@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- Contenido principal de la actividad -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Toolbar -->
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/tooolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/black"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <!-- Logo y título dentro del Toolbar -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="start|center_vertical"
+                android:paddingStart="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <!-- Imagen del logo -->
+
+                <!-- Texto del título -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="DrimVoice"
+                    android:textColor="#E3FFFFFF"
+                    android:textSize="24sp" />
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+        <!-- Elementos de la interfaz -->
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="(Nombre nota)"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.21"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.143" />
+
+        <Button
+            android:id="@+id/BotonNuevaNota"
+            android:layout_width="184dp"
+            android:layout_height="90dp"
+            android:text="Nueva nota"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tooolbar"
+            app:layout_constraintVertical_bias="0.872" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- NavigationView para el menú lateral -->
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigation_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:menu="@menu/drawer_menu" />
+
+</androidx.drawerlayout.widget.DrawerLayout>
