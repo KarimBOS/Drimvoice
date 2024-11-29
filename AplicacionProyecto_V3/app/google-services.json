@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "316175432172",
+    "firebase_url": "https://drimvoice-13d45-default-rtdb.firebaseio.com",
+    "project_id": "drimvoice-13d45",
+    "storage_bucket": "drimvoice-13d45.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:316175432172:android:ac71436bc4f33e46e468c9",
+        "android_client_info": {
+          "package_name": "com.example.aplicacionproyecto"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDydYDGmIsKtGPgrV-Sq6ldtPynHfk7c6Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1044798822678:android:93f8988f93122f17f39837",
+        "android_client_info": {
+          "package_name": "com.example.aplicacionproyecto"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA-ZsfvAdNP7SugNy0miQPfTyOXun28u2M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

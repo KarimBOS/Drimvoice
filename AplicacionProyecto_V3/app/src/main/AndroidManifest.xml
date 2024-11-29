@@ -1,0 +1,42 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:label="DrimVoice"
+        android:roundIcon="@android:drawable/alert_dark_frame"
+        android:icon="@drawable/logobotonnotaa"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AplicacionProyecto"
+        tools:targetApi="31">
+
+        <!-- Actividad de Login, configurada para que se inicie al abrir la app -->
+        <activity android:name=".LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Otras actividades -->
+        <activity android:name=".RegisterActivity" android:exported="true" />
+        <activity android:name=".Note" android:exported="false" />
+        <activity android:name=".NotesSharedPreferences" android:exported="false" />
+        <activity android:name=".VisualizarNota" android:exported="true" />
+        <activity android:name=".EditarNota" android:exported="true" />
+        <activity android:name=".activity_drawer_menu" android:exported="false" />
+        <activity android:name=".drawer_menu" android:exported="false" />
+        <activity android:name=".MainActivity2" android:exported="false" />
+        <activity android:name=".MainActivity" android:exported="true" />
+    </application>
+</manifest>
